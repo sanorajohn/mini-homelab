@@ -5,8 +5,8 @@
 06/23/2026
 
 ## What I Did
-- Opened Active Directory Users and Computers (ADUC)
-- Created multiple domain user accounts inside an Organizational Unit (OU)
+- Opened Active Directory Users and Computers 
+- Created multiple domain user accounts inside an Organizational Unit 
 
 ## Skills Practiced
 - Navigating ADUC 
