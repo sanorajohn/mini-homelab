@@ -24,4 +24,4 @@
 - Basics of domain administration
 
 ## Screenshot of Users Created
-![Active Directory Users](Screenshot 2026-06-23 151050.png)
+![Active Directory Users](ad_user.png)
