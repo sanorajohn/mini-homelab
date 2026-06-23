@@ -20,20 +20,26 @@ VMware automatically assigned the Windows 10 VM a DNS server from the NAT networ
 Since domain joins require the client to use the **DC as its DNS**, the join failed.
 
 ### How I Fixed It
-- Opened Windows 10 network adapter settings  
-- Went into IPv4 properties  
-- Manually set the DNS server to the **Domain Controller’s IP address**  
-- Saved the settings and restarted the network  
-- Verified connectivity using `ping <DC-IP>`  
-- Attempted the domain join again  
-- Successfully joined the domain after DNS was corrected  
+- Ran `ipconfig` on both the Windows Server 2022 Domain Controller and the Windows 10 VM
+- Noticed that the Windows 10 VM was using a different DNS server than the Domain Controller
+- Opened VMware network settings and made sure both VMs were on the same network type (NAT/VMnet8)
+- Ensured the Windows 10 VM was receiving the correct DNS information from the same network as the Domain Controller
+- Verified the DNS and IP settings again using `ipconfig`
+- Confirmed connectivity by pinging the Domain Controller
+- Attempted the domain join again
+- Successfully joined the domain once both machines were using the same DNS source
+ 
 
 ### What I Learned
-- Windows clients MUST use the Domain Controller as their DNS server  
-- VMware NAT/Host-Only networks can assign incorrect DNS automatically  
-- Most domain join issues are DNS-related, not credential-related  
-- Always check IP, DNS, and network mode when joining a domain  
+- Domain joins fail when the client and Domain Controller use different DNS servers
+- `ipconfig` is the fastest way to compare network settings between machines
+- VMware network modes (NAT, Host-Only, Bridged) can cause mismatched DNS if not aligned
+- Both VMs must be on the same virtual network for Active Directory to work properly
+- Most domain join issues are DNS or network configuration problems, not credential problems
 
+
+
+ 
 
 # Active Directory Practice – Creating Users
 
