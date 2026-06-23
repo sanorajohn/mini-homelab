@@ -22,3 +22,6 @@
 - How to create domain users in Active Directory
 - How OUs help organize users in a domain
 - Basics of domain administration
+
+## Screenshot of Users Created
+![Active Directory Users](Screenshot 2026-06-23 151050.png)
