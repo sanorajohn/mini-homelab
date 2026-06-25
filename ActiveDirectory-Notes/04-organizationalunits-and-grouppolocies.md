@@ -53,3 +53,12 @@ Screenshot of Groups Created
 - Policies require correct DNS and domain connectivity to apply
 
 
+
+
+## Screenshots  
+All screenshots for this lab are available here:  
+[Step 4 Screenshots](./step4-screenshoots.md)
+
+
+
+
