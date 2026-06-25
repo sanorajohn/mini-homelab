@@ -21,10 +21,6 @@
 - Users should be added to groups instead of assigning permissions individually
 - Keeping groups inside the correct OU helps with organization and GPO targeting
 
-Screenshot of Groups Created
-(No screenshot available — groups were created before documentation)
-
-
 
 
 ## Group Policy Practice – Applying a GPO
