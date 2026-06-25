@@ -1,8 +1,5 @@
 # Active Directory Practice – Creating Users
 
-## Date
-06/23/2026
-
 ## What I Did
 - Opened Active Directory Users and Computers 
 - Created multiple domain user accounts inside an Organizational Unit 
