@@ -54,7 +54,6 @@ Screenshot of Groups Created
 
 
 
-
 ## Screenshots  
 All screenshots for this lab are available here:  
 [Step 4 Screenshots](./step4-screenshoots.md)
