@@ -6,14 +6,14 @@
 - Verified network connectivity between the Windows 10 VM and the Domain Controller
 
 ### Problem I Ran Into
-Windows 10 could not join the domain because it was using a **different DNS server** than the Domain Controller.  
+Windows 11 could not join the domain because it was using a **different DNS server** than the Domain Controller.  
 This caused:
 - “Domain not found” errors  
 - Failure to locate the Domain Controller  
 - Windows not recognizing the domain name  
 
 ### Root Cause
-VMware automatically assigned the Windows 10 VM a DNS server from the NAT network instead of the **Domain Controller’s IP**.  
+VMware automatically assigned the Windows 11 VM a DNS server from the NAT network instead of the **Domain Controller’s IP**.  
 Since domain joins require the client to use the **DC as its DNS**, the join failed.
 
 ### How I Fixed It
