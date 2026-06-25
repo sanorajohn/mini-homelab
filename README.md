@@ -10,7 +10,6 @@ Built a small homelab focused on IT support and basic networking practice using 
 
 ## Tools
 - VMware Workstation Pro
-- Windows 11 Pro
 - Windows Server 2022
 - Windows 10 (VM)
 
